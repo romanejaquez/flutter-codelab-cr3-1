@@ -319,11 +319,9 @@ class Utils {
   <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
   <script src="//support.google.com/inapp/api.js"></script>
   <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    const lab = document.querySelector('google-codelab');
-    lab._goToHome = function() {
-      window.location.href = "https://romanjustcodes.web.app/#/workshops
-    }
+    const el = document.getElementById('done');
+    el.removeAttribute('href');
+    el.addEventListener('click', function() { window.location.href = 'https://romanjustcodes.web.app/#/workshops'; });
 });
   </script>
 
